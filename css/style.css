@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.movie-card {
+  background-color: beige;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: brown;
+  margin-top: 0.5rem;
+}
+
+.btn-rent {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-rent:hover {
+  background-color: #b20710;
+}
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 3rem 2rem 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.contact-section {
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 5px rgba(229, 9, 20, 0.2);
+}
+
+.btn-submit {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: red;
+}
+
+.hero-trailer {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #000;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.trailer-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  color: white;
+  z-index: 2;
+}
+
+.trailer-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.trailer-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-trailer {
+    height: 300px;
+  }
+
+  .trailer-content {
+    padding: 1.5rem;
+  }
+
+  .trailer-content h2 {
+    font-size: 1.8rem;
+
+  .trailer-content p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .contact-section {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+}

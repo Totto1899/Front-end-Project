@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>PeliClick</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./estrenos.html">Estrenos</a></li>
+          <li><a href="./categorias.html">Categorías</a></li>
+          <li><a href="./mi-cuenta.html">Mi Cuenta</a></li>
+          <li><a href="./carrito.html">Carrito (0)</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes algún problema con tu alquiler? Envíanos tu consulta.</p>
+
+        <form
+          action="https://formspree.io/f/mvzypner"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Nombre completo</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ej: Jane Doe"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiry">Tipo de consulta</label>
+            <select id="enquiry" name="enquiry">
+              <option value="support">Soporte técnico</option>
+              <option value="billing">Facturación</option>
+              <option value="general">Duda general</option>
+              <option value="suggestion">Sugerencia</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: soporte@Peliclick.com</p>
+          <p>Teléfono: +54 11 1234-5678</p>
+        </section>
+        <section class="footer-section">
+          <h4>Seguinos en nuestras redes sociales!</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </section>
+        <section class="footer-section">
+          <h4>Información Legal</h4>
+          <ul>
+            <li><a href="#">Términos y Condiciones</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Centro de Ayuda</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 Tu Videoclub Digital. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

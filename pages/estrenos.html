@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PeliClick</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/style.css"
+    <title>Estrenos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
@@ -17,52 +20,72 @@
       </div>
       <nav>
         <ul>
-          <li><a href="./pages/estrenos.html">Estrenos</a></li>
-          <li><a href="./pages/categorias.html">Categorías</a></li>
-          <li><a href="./pages/mi-cuenta.html">Mi Cuenta</a></li>
-          <li><a href="./pages/carrito.html">Carrito (0)</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./categorias.html">Categorías</a></li>
+          <li><a href="./mi-cuenta.html">Mi Cuenta</a></li>
+          <li><a href="./carrito.html">Carrito (0)</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h2>Películas Destacadas</h2>
+      <aside class="hero-trailer">
+        <video
+          src="../img/trailerDune2.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          class="bg-video"
+        ></video>
+
+        <div class="trailer-content">
+          <h2>Dune: Part Two</h2>
+          <p>Ya disponible. Disfruta del evento cinematográfico del año.</p>
+        </div>
+      </aside>
+      <h2>Últimos Estrenos</h2>
+
       <section class="movie-grid">
         <article class="movie-card">
-          <img src="./img/jurassicPark.png" alt="Póster de Jurassic Park" />
+          <img src="../img/dune2.jpg" alt="Póster de Dune: Part Two" />
           <div class="movie-info">
-            <h3>Jurassic Park</h3>
-            <p class="genre">Thriller</p>
-            <p class="price">$3.99</p>
-          </div>
-          <button class="btn-rent">Rent now</button>
-        </article>
-        <article class="movie-card">
-          <img src="./img/pulpFiction.jpg" alt="Póster de Pulp Fiction" />
-          <div class="movie-info">
-            <h3>Pulp Fiction</h3>
-            <p class="genre">Thriller</p>
-            <p class="price">$2.99</p>
+            <h3>Dune: Part Two</h3>
+            <p class="genre">Sci-Fi</p>
+            <p class="price">$5.99</p>
           </div>
           <button class="btn-rent">Rent now</button>
         </article>
 
         <article class="movie-card">
-          <img src="./img/theRevenant.jpg" alt="Póster de The Revenant" />
+          <img src="../img/oppenheimer.jpg" alt="Póster de Oppenheimer" />
           <div class="movie-info">
-            <h3>The Revenant</h3>
-            <p class="genre">Western</p>
-            <p class="price">$4.99</p>
+            <h3>Oppenheimer</h3>
+            <p class="genre">Drama / Biography</p>
+            <p class="price">$5.99</p>
           </div>
           <button class="btn-rent">Rent now</button>
         </article>
 
         <article class="movie-card">
-          <img src="./img/Gladiator.jpg" alt="Póster de Gladiator" />
+          <img src="../img/poorThings.jpg" alt="Póster de Poor Things" />
           <div class="movie-info">
-            <h3>Gladiator</h3>
-            <p class="genre">Action</p>
-            <p class="price">$3.50</p>
+            <h3>Poor Things</h3>
+            <p class="genre">Comedy / Sci-Fi</p>
+            <p class="price">$5.99</p>
+          </div>
+          <button class="btn-rent">Rent now</button>
+        </article>
+
+        <article class="movie-card">
+          <img
+            src="../img/inglouriousBasterds.jpg"
+            alt="Póster de Inglourious Basterds"
+          />
+          <div class="movie-info">
+            <h3>Inglourious Basterds</h3>
+            <p class="genre">Thriller</p>
+            <p class="price">$5.99</p>
           </div>
           <button class="btn-rent">Rent now</button>
         </article>
