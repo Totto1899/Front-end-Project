@@ -20,7 +20,7 @@
           <li><a href="./pages/estrenos.html">Estrenos</a></li>
           <li><a href="./pages/categorias.html">Categorías</a></li>
           <li><a href="./pages/mi-cuenta.html">Mi Cuenta</a></li>
-          <li><a href="./pages/carrito.html">Carrito (0)</a></li>
+          <li><a href="./pages/carrito.html">Carrito (<span id="contador-carrito">0</span>)</a></li>
           <li><a href="./pages/contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
             <p class="genre">Thriller</p>
             <p class="price">$3.99</p>
           </div>
-          <button class="btn-rent">Rent now</button>
+          <button class="btn-rent" data-id="5">Rent now</button>
         </article>
         <article class="movie-card">
           <img src="./img/pulpFiction.jpg" alt="Póster de Pulp Fiction" />
@@ -44,7 +44,7 @@
             <p class="genre">Thriller</p>
             <p class="price">$2.99</p>
           </div>
-          <button class="btn-rent">Rent now</button>
+          <button class="btn-rent" data-id="3">Rent now</button>
         </article>
 
         <article class="movie-card">
@@ -54,7 +54,7 @@
             <p class="genre">Western</p>
             <p class="price">$4.99</p>
           </div>
-          <button class="btn-rent">Rent now</button>
+          <button class="btn-rent" data-id="8">Rent now</button>
         </article>
 
         <article class="movie-card">
@@ -64,7 +64,7 @@
             <p class="genre">Action</p>
             <p class="price">$3.50</p>
           </div>
-          <button class="btn-rent">Rent now</button>
+         <button class="btn-rent" data-id="2">Rent now</button>
         </article>
       </section>
     </main>
@@ -96,5 +96,6 @@
         <p>&copy; 2026 Tu Videoclub Digital. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

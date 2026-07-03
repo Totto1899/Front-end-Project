@@ -29,8 +29,35 @@
       </nav>
     </header>
 
-    <main>
-      <h2>En construcción...</h2>
+    <main class="cart-main">
+      <h2>Tu Carrito de Alquiler</h2>
+
+      <div class="cart-layout">
+        <section class="cart-items">
+          <article class="cart-item">
+            <img src="../img/poster-ejemplo.jpg" alt="Póster" />
+            <div class="cart-item-details">
+              <h4>Nombre de la Película</h4>
+              <p>Alquiler 48hs</p>
+            </div>
+            <div class="cart-item-price">$3.99</div>
+            <button class="btn-remove">Eliminar</button>
+          </article>
+        </section>
+
+        <aside class="cart-summary">
+          <h3>Resumen</h3>
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span>$3.99</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total a Pagar:</span>
+            <span>$3.99</span>
+          </div>
+          <button class="btn-primary btn-checkout">Finalizar Compra</button>
+        </aside>
+      </div>
     </main>
 
     <footer>
@@ -61,5 +88,6 @@
         <p>&copy; 2026 Tu Videoclub Digital. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

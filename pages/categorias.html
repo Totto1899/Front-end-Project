@@ -23,13 +23,32 @@
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="./estrenos.html">Estrenos</a></li>
           <li><a href="./mi-cuenta.html">Mi Cuenta</a></li>
-          <li><a href="./carrito.html">Carrito (0)</a></li>
+          <li>
+            <a href="./carrito.html"
+              >Carrito (<span id="contador-carrito">0</span>)</a
+            >
+          </li>
           <li><a href="./contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h2>En construcción...</h2>
+    <main class="categorias-main">
+      <aside class="categories-sidebar">
+        <h3>Filtrar por Género</h3>
+        <ul class="genre-list">
+          <li><a href="#">Todos</a></li>
+          <li><a href="#">Acción</a></li>
+          <li><a href="#">Ciencia Ficción</a></li>
+          <li><a href="#">Comedia</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Terror</a></li>
+        </ul>
+      </aside>
+
+      <section class="categories-content">
+        <h2>Explorar Catálogo</h2>
+        <div class="movie-grid"></div>
+      </section>
     </main>
     <footer>
       <div class="footer-content">
@@ -59,5 +78,6 @@
         <p>&copy; 2026 Tu Videoclub Digital. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>
